@@ -7,12 +7,6 @@ public class LanguageUpdateDtoValidator: AbstractValidator<LanguageCreateDto>
 {
     public LanguageUpdateDtoValidator()
     {
-        RuleFor(x => x.Code)
-            .NotNull()
-            .NotEmpty()
-                .WithMessage("Code boş ola bilməz!")
-            .MaximumLength(2)
-                .WithMessage("Code uzunluğu 2-dən çox ola bilməz!");
 
         RuleFor(x => x.Name)
             .NotNull()
