@@ -293,3 +293,4 @@ C:\Users\I Novbe\Desktop\Tabu\Tabu\obj\Debug\net8.0\refint\Tabu.dll
 C:\Users\I Novbe\Desktop\Tabu\Tabu\obj\Debug\net8.0\Tabu.pdb
 C:\Users\I Novbe\Desktop\Tabu\Tabu\obj\Debug\net8.0\Tabu.genruntimeconfig.cache
 C:\Users\I Novbe\Desktop\Tabu\Tabu\obj\Debug\net8.0\ref\Tabu.dll
+C:\Users\99450\Desktop\Tabu\Tabu\obj\Debug\net8.0\Tabu.sourcelink.json

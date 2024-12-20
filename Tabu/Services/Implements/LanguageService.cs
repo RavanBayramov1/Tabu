@@ -33,16 +33,10 @@ public class LanguageService(TabuDbContext _context, IMapper _mapper) : ILanguag
     }
     public async Task DeleteAsync(string code)
     {
-        if (await _context.Languages.AnyAsync(x => x.Code == code))
-            throw new LanguageExistException();
         var data = await _getByCode(code);
+        if (data == null) throw new LanguageNotFoundException();
         _context.Languages.Remove(data);
         await _context.SaveChangesAsync();
-    }
-
-    public Task<LanguageGetDto> GetByCode(string code)
-    {
-        throw new NotImplementedException();
     }
     async Task<Language?> _getByCode(string code)
     => await _context.Languages.FindAsync(code);

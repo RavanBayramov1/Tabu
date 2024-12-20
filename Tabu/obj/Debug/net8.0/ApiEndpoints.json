@@ -38,7 +38,7 @@
   {
     "ContainingType": "Tabu.Controllers.LanguagesController",
     "Method": "Update",
-    "RelativePath": "api/Languages",
+    "RelativePath": "api/Languages/{code}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -46,7 +46,7 @@
       {
         "Name": "code",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "dto",
@@ -59,7 +59,7 @@
   {
     "ContainingType": "Tabu.Controllers.LanguagesController",
     "Method": "Delete",
-    "RelativePath": "api/Languages",
+    "RelativePath": "api/Languages/{code}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -67,7 +67,7 @@
       {
         "Name": "code",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
