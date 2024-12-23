@@ -3,7 +3,7 @@ using Tabu.DTOs.Languages;
 
 namespace Tabu.Validators.Languages;
 
-public class LanguageUpdateDtoValidator: AbstractValidator<LanguageCreateDto>
+public class LanguageUpdateDtoValidator: AbstractValidator<LanguageUpdateDto>
 {
     public LanguageUpdateDtoValidator()
     {

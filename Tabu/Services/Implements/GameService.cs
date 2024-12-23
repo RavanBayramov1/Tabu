@@ -1,5 +1,7 @@
-﻿namespace Tabu.Services.Implements;
+﻿using Tabu.Services.Abstracts;
 
-public class GameService
+namespace Tabu.Services.Implements;
+
+public class GameService : IGameService
 {
 }

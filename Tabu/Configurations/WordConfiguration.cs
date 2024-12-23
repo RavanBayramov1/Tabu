@@ -20,7 +20,5 @@ public class WordConfiguration : IEntityTypeConfiguration<Word>
             .HasMany(x=>x.BannedWords)
             .WithOne(x=>x.Word)
             .HasForeignKey(x => x.WordId);
-
-
     }
 }

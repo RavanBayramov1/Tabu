@@ -11,6 +11,7 @@ namespace Tabu.DAL
         public DbSet<Word> Words { get; set; }
         public DbSet<BannedWord> BannedWords { get; set; }
         public DbSet<Game> Games { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
             {
                 modelBuilder.ApplyConfigurationsFromAssembly(typeof(TabuDbContext).Assembly);
