@@ -17,7 +17,7 @@ public class WordService(TabuDbContext _context, IMapper _mapper) : IWordService
 {
     public async Task<IEnumerable<WordGetDto>> GetAllAsync()
     {
-        var word = await _context.Words.ToListAsync();
+        var word = await _context.Words.Include(x=> x.BannedWords).ToListAsync();
         return _mapper.Map<IEnumerable<WordGetDto>>(word);
     }
     public async Task CreateAsync(WordCreateDto dto)

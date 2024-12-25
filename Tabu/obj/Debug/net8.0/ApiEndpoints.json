@@ -84,22 +84,6 @@
   },
   {
     "ContainingType": "Tabu.Controllers.WordsController",
-    "Method": "Post",
-    "RelativePath": "api/Words",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "Tabu.DTOs.Words.WordCreateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Tabu.Controllers.WordsController",
     "Method": "Update",
     "RelativePath": "api/Words/{code}",
     "HttpMethod": "PUT",
@@ -140,6 +124,22 @@
       {
         "Name": "code",
         "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tabu.Controllers.WordsController",
+    "Method": "PostMAny",
+    "RelativePath": "api/Words/AddRange",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Tabu.DTOs.Words.WordCreateDto, Tabu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],

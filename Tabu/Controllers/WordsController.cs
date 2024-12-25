@@ -17,11 +17,14 @@ namespace Tabu.Controllers
             return Ok(await _service.GetAllAsync());
         }
         [HttpPost("AddRange")]
-        public async Task<IActionResult> Post(WordCreateDto dto)
+        public async Task<IActionResult> PostMAny(IEnumerable<WordCreateDto> dto)
         {
             try
             {
-                await _service.CreateAsync(dto);
+                foreach (var item in dto)
+                {
+                    await _service.CreateAsync(item);
+                }
                 return Created();
             }
             catch (Exception ex)
